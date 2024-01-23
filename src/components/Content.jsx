@@ -1,9 +1,8 @@
-import React from 'react'
-
-export const Content = () => {
+export default function Content ({ content }) {
+    
     return (
         <p>
-            {"This page was done by Justin Nguyen"}
+            {content.body}
         </p>
     )
 }
