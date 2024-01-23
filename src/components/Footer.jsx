@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer>
             {"This page was created through Coding Temple. Thanks for visiting!"}
