@@ -38,7 +38,7 @@ export const Posts = () => {
 
     return (
         <>
-            {Posts.length > 0 ? Posts.map((post) => {
+            {posts.length > 0 ? posts.map((post) => {
                 return <Post key={post.id} post={post} />
             }) : <p>No Posts to Display</p>}
         </>

@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container'
 
 import Header from './components/Header'
 import Body from './components/Body'
-import Posts from './components/Posts'
 import Post from './components/Post'
 
 export default function App() {
@@ -12,9 +11,9 @@ export default function App() {
   <Container fluid data-bs-theme='dark' className='app'>
       <Header />
       <Body>
-        <Posts></Posts>
+        <Post></Post>
       </Body>
-    </Container>
- )
+  </Container>
+ )   
 }
 
