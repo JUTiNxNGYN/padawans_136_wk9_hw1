@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 
 import Header from './components/Header'
 import Body from './components/Body'
-import Post from './components/Post'
+import { Posts } from './components/Posts'
 
 export default function App() {
 
@@ -11,7 +11,7 @@ export default function App() {
   <Container fluid data-bs-theme='dark' className='app'>
       <Header />
       <Body>
-        <Post></Post>
+        <Posts></Posts>
       </Body>
   </Container>
  )   
