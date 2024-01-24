@@ -2,7 +2,8 @@ export default function Content ({ content }) {
     
     return (
         <p>
-            {content.body}
+            <b>{content.model}</b><br />
+            {content.make}
         </p>
     )
 }

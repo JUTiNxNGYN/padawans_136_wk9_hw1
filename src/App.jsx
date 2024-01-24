@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Header from './components/Header'
-import Contents from './components/Contents'
-import Content from './components/Content'
+import Contents from './components/Posts'
+import Content from './components/Post'
 
 export default function App() {
 
@@ -10,8 +10,9 @@ export default function App() {
 
     <div className="App">
       <Header />
-      <Contents />
-      <Content></Content>
+      <Body>
+        <Posts></Posts>
+      </Body>
     </div>
  )
 }

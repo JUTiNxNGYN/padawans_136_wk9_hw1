@@ -1,9 +1,9 @@
-import React from 'react'
-import Content from "./Content"
+
+import Content from "./Post"
 
 export const Contents = () => {
 
-    const cars = [
+    const contents = [
         {
             'Year' : '2024',
             'Make' : 'Toyota',
@@ -32,8 +32,8 @@ export const Contents = () => {
 
     return (
         <>
-            {cars.length > 0 ? cars.map((car) => {
-                return <Post key={car.id} car={car} />
+            {contents.length > 0 ? contents.map((content) => {
+                return <Post key={content.id} content={content} />
             }) : <p>No Posts to Display</p>}
         </>
     )
