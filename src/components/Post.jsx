@@ -1,9 +1,10 @@
-export default function Content ({ content }) {
+export default function Post ({ post }) {
     
     return (
         <p>
-            <b>{content.model}</b><br />
-            {content.make}
+            <b>{post.car.model}</b><br />
+            {post.car.make}
+            {post.car.trim}
         </p>
     )
 }

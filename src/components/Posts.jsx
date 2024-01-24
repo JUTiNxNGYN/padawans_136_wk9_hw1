@@ -1,39 +1,45 @@
+import Post from "./Post"
 
-import Content from "./Post"
+export const Posts = () => {
 
-export const Contents = () => {
-
-    const contents = [
+    const posts = [
         {
-            'Year' : '2024',
-            'Make' : 'Toyota',
-            'Model' : 'Tundra',
-            'Trim' : 'TRD Pro',
-            'Color' : 'Terra',
-            'user_id' : '1'
+            "id": "1",
+            "car": {
+                "year" : "2024",
+                "make" : "Toyota",
+                "model" : "Tundra",
+                "trim" : "TRD Pro",
+                "color" : "Terra",
+            }
         },
         {
-            'Year' : '2018',
-            'Make' : 'Nissan',
-            'Model' : 'GTR',
-            'Trim' : 'Nismo',
-            'Color' : 'Cloud White',
-            'user_id' : '2'
+            "id": "2",
+            "car":{
+                "year" : "2018",
+                "make" : "Nissan",
+                "model" : "GTR",
+                "trim" : "Nismo",
+                "color" : "Cloud White",
+        
+            }
         },
         {
-            'Year' : '2023',
-            'Make' : 'Porsche',
-            'Model' : 'Taycan',
-            'Trim' : 'GTS Sport Turismo',
-            'Color' : 'Chalk',
-            'user_id' : '1'        
+            "id": "1",
+            "car": {
+                "year" : "2023",
+                "make" : "Porsche",
+                "model" : "Taycan",
+                "trim" : "GTS Sport Turismo",
+                "color" : "Chalk",   
+            }       
         }
     ]
 
     return (
         <>
-            {contents.length > 0 ? contents.map((content) => {
-                return <Post key={content.id} content={content} />
+            {Posts.length > 0 ? Posts.map((post) => {
+                return <Post key={post.id} post={post} />
             }) : <p>No Posts to Display</p>}
         </>
     )
