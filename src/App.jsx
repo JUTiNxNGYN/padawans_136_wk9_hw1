@@ -1,8 +1,11 @@
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
 
-import Header from './components/Header'
-import Body from './components/Body'
-import { Posts } from './components/Posts'
+import { Posts } from './components/Posts';
+import Header from './components/Header';
+import Body from './components/Body';
+import Car from "./components/Car";
+import Register from "./components/forms/Register";
+
 
 export default function App() {
 
@@ -11,7 +14,9 @@ export default function App() {
   <Container fluid data-bs-theme='dark' className='app'>
       <Header />
       <Body>
-        <Posts></Posts>
+        {/* <Posts></Posts> */}
+        <Car />
+        <Register /> 
       </Body>
   </Container>
  )   

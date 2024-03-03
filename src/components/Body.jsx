@@ -1,7 +1,7 @@
-import Container from 'react-bootstrap/Container'
-import Stack from 'react-bootstrap/Stack'
+import Container from 'react-bootstrap/Container';
+import Stack from 'react-bootstrap/Stack';
 
-import { Posts } from "./Posts"
+import { Posts } from "./Posts";
 
 export default function Body({ children }) {
 

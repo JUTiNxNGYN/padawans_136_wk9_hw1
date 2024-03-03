@@ -1,46 +1,76 @@
 import Post from "./Post"
+import Container from "react-bootstrap/Container"
 
 export const Posts = () => {
 
     const posts = [
         {
-            "id": "1",
-            "car": {
-                "year" : "2024",
-                "make" : "Toyota",
-                "model" : "Tundra",
-                "trim" : "TRD Pro",
-                "color" : "Terra",
+            "body": "Tundra TRD PRO",
+            "id": "3",
+            "timestamp": "2024-01-03T00:35:27.568774",
+            "user": {
+              "email": "jutin469@gmail.com",
+              "first_name": null,
+              "id": "1",
+              "last_name": null,
+              "username": "jutin"
             }
-        },
-        {
-            "id": "2",
-            "car":{
-                "year" : "2018",
-                "make" : "Nissan",
-                "model" : "GTR",
-                "trim" : "Nismo",
-                "color" : "Cloud White",
-        
+          },
+          {
+            "body": "Nissan GTR Nismo",
+            "id": "4",
+            "timestamp": "2024-01-03T00:54:46.188100",
+            "user": {
+              "email": "jutin469@gmail.com",
+              "first_name": null,
+              "id": "1",
+              "last_name": null,
+              "username": "jutin"
             }
-        },
-        {
-            "id": "1",
-            "car": {
-                "year" : "2023",
-                "make" : "Porsche",
-                "model" : "Taycan",
-                "trim" : "GTS Sport Turismo",
-                "color" : "Chalk",   
-            }       
-        }
-    ]
+          },
+          {
+            "body": "Porchse Taycan Turbo",
+            "id": "5",
+            "timestamp": "2024-01-03T00:54:49.010977",
+            "user": {
+              "email": "jutin469@gmail.com",
+              "first_name": null,
+              "id": "1",
+              "last_name": null,
+              "username": "jutin"
+            }
+          },
+          {
+            "body": "Dodge Ram TRX",
+            "id": "6",
+            "timestamp": "2024-01-03T00:54:50.843257",
+            "user": {
+              "email": "jutin469@gmail.com",
+              "first_name": null,
+              "id": "1",
+              "last_name": null,
+              "username": "jutin"
+            }
+          },
+          {
+            "body": "Ford Raptor R",
+            "id": "7",
+            "timestamp": "2024-01-04T01:56:13.923976",
+            "user": {
+              "email": "jutin469@gmail.com",
+              "first_name": null,
+              "id": "1",
+              "last_name": null,
+              "username": "jutin"
+            }
+          }
+        ]
 
     return (
         <>
             {posts.length > 0 ? posts.map((post) => {
                 return <Post key={post.id} post={post} />
-            }) : <p>No Posts to Display</p>}
+            }) : <p>No Cars to Display</p>}
         </>
     )
 }
